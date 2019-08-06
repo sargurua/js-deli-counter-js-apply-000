@@ -3,6 +3,18 @@ function takeANumber(position, name){
   return `Welcome, ${name}. You are number ${position.length} in line.`;
 }
 
+var counter = 0;
+
+function takeANumber2(){
+  counter++;
+  console.log(`We are now serving ${counter}.`);
+}
+
+
+takeANumber2();
+takeANumber2();
+takeANumber2();
+
 function nowServing(katzDeliLine){
   if (katzDeliLine.length === 0)
     return "There is nobody waiting to be served!"
